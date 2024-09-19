@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروعنا</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         body {
+            direction: rtl; /* Set text direction to RTL for Arabic */
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+        }
+
+        .contact-section {
+            text-align: right; /* Align text to the right */
+            padding: 30px;
+        }
+
+        .contact-title {
+            font-size: 2.5rem; /* Responsive font size */
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 100px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .contact-info img {
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .contact-title {
+                font-size: 3.5rem;
+            }
+
+            .contact-info img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .mapoff {
+            width: 100%;
+            height: 300px; /* Adjust height for responsiveness */
+            background: url('./image/Rectangle office.webp') no-repeat center center;
+            background-size: cover;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .map {
+            height: 60vh; 
+            background: url('./image/Rectangle 1725.webp') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            border-radius: 8px;
+            margin-left: 5%;
+        }
+
+        @media (min-width: 768px) {
+            .map {
+                height: 500px;
+            }
+        }
+
+        .branch-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            text-align: right;
+            font-size: 1.5rem;
+        }
+
+        .branch-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-bar {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            background-color: #fff;
+        }
+
+        .contact-wrapper {
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .contact-wrapper {
+                margin-top: 10vh;
+                margin-bottom: 5vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #2b3595; color: white; height:auto; padding: 5px 0; text-align: center; font-size: 1.5rem;">
+        شحن مجاني بقيمة مشتريات اعلى من 999 جنيه
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Active</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-grid-3x3"></i> Categories
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                            <li><a class="dropdown-item" href="#">فروعنا</a></li>
+                            <li><a class="dropdown-item" href="#">نسائي</a></li>
+                            <li><a class="dropdown-item" href="#">رجالي</a></li>
+                            <li><a class="dropdown-item" href="#">أطفال</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Branch List Section -->
+            <div class="col-md-6 col-12 p-3 d-flex flex-column">
+                <input type="text" class="form-control mb-3 search-bar text-end" placeholder="ابحث عن فروعنا">
+                <div class="branch-list flex-grow-1">
+                    <div class="branch-item">
+                        <h4>القاهرة التجمع الخامس</h4>
+                        <p>التجمع الخامس، التسعين الشمالي</p>
+                        <p>01003574577</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4> القاهرة التجمع الخامس</h4>
+                        <p>التجمع الخامس، التسعين الشمالي</p>
+                        <p>01003574577</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4>مدينة نصر</h4>
+                        <p>مول سيتي ستارز - المرحلة الأولى - الدور الرابع</p>
+                        <p>01026755583</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4>مدينة نصر</h4>
+                        <p>السراج مول . الدور الأول</p>
+                        <p>01003574577</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4>مدينة نصر</h4>
+                        <p>23 شارع مصطفى النحاس أمام التابعى</p>
+                        <p>01003574577</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4>مدينة نصر</h4>
+                        <p>التجمع الخامس، التسعين الشمالي</p>
+                        <p>01003574577</p>
+                    </div>
+                    <div class="branch-item">
+                        <h4>مدينة نصر</h4>
+                        <p>جنينــة مول . الدور الأرضى</p>
+                        <p>01003574577</p>
+                    </div>
+                    <var> <div class="branch-item">
+                        <div class="branch-item">
+                            <h4>مدينة نصر</h4>
+                            <p>التجمع الخامس، التسعين الشمالي</p>
+                            <p>01003574577</p>
+                        </div>
+                        <div class="branch-item">
+                            <h4>مصر الجديدة</h4>
+                            <p>59 شارع عبد الحميد بدوي</p>
+                            <p>01003574577</p>
+                        </div>
+                        <div class="branch-item">
+                            <h4>مصر الجديدة</h4>
+                            <p>116 شارع سليم الاول بجانب عمر افندي</p>
+                            <p>01003574577</p>
+                        </div>
+                        <div class="branch-item">
+                            <h4>وسط البلد</h4>
+                            <p>طلعت حرب مول الدور الثالث</p>
+                            <p>01003574577</p>
+                        </div>
+                        <div class="branch-item">
+                            <h4>المعادي</h4>
+                            <p>شارع النادي ارض الجولف خلف مستشفى الريان</p>
+                            <p>01003574577</p>
+                        </div>
+                        <div class="branch-item"></div>
+                            <h4>زهراء المعادي</h4>
+                        <p>شارع الــ 50 امام HUB 50</p>
+                        <p>01003574577</p>
+                    </div>
+                    <!-- Add more branches here as needed -->
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="col-md-6 col-12 p-0">
+                <div class="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-wrapper">
+        <div class="contact-section">
+            <div class="contact-title">المكتب الرئيسي</div>
+            <div class="mapoff"></div>
+            <div class="contact-info">
+                <img src="./image/male icon.png" alt="Email Icon" class="img-fluid">
+                <span>info@activnew.co</span>
+            </div>
+            <div class="contact-info">
+                <img src="./image/phone icon.png" alt="Phone Icon" class="img-fluid">
+                <span>01007428999</span>
+            </div>
+            <div class="contact-info">
+                <img src="./image/position icon.png" alt="Location Icon" class="img-fluid">
+                <span>عنوان الفرع الرئيسي, القاهرة, مصر</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

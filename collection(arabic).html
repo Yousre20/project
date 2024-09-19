@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات ActivNew</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./collection.css">
+    <style>
+        /* General page styling */
+        body {
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+            direction: rtl; /* Right-to-left direction */
+            text-align: right;
+        }
+
+        /* Navbar styling */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* Main container styling */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-left: 300px; /* Leave space for fixed filter sidebar */
+        }
+
+        /* Fixed filter sidebar */
+        .filter-sidebar {
+            position:absolute;
+            left: 0;
+            top: 110px;
+            width: 250px;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            z-index: 1000;
+        }
+
+        .filter-sidebar h5 {
+            margin-top: 20px;
+        }
+
+        .filter-sidebar input {
+            margin-left: 10px;
+        }
+
+        /* Product card layout */
+        .products-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .product-card {
+            max-width: 250px;
+            margin: 15px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .price-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .price-old {
+            color: #dc3545; /* Red color for discount */
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .price-current {
+            color: #004085; /* Navy color */
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .discount-text {
+            color: #dc3545;
+            font-weight: normal;
+        }
+
+        .promo-banner {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .promo-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .main-container {
+                padding-left: 0; /* Remove extra space for fixed sidebar */
+            }
+
+            .filter-sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-right: none;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+
+            .product-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Free Shipping Banner -->
+    <div style="background-color: #2b3595; color: white; height:auto; width: auto; padding: 5px 0; text-align: center; font-size: 25px;">
+        شحن مجاني بقيمة مشتريات أعلى من 1299 جنيه
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">اكتف</a>
+        <div class="mr-auto">
+            <a href="#" class="btn btn-primary">تحميل التطبيق</a>
+            <a href="./collection.html" class="btn btn-outline-dark">الإنجليزية</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Product Section -->
+        <div class="products-container">
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-20227692-BLACK_1_large.webp" class="card-img-top" alt="شبشب بنفسجي">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">شبشب نسائي من اكتف نيو - بنفسجي غامق</h5>
+                        <div class="price-container">
+                            <span class="price-old">20.00 جنيه <span class="discount-text">وفر</span></span>
+                            <span class="price-current">99.00 جنيه</span>
+                        </div>
+                        <p class="product-brand">اكتف نيو</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238009-L.BLUE_1-1_large.webp" class="card-img-top" alt="شبشب أزرق">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">شبشب نسائي من اكتف نيو - بنفسجي غامق</h5>
+                        <p class="product-brand">اكتف نيو</p>
+                        <div class="price-container">
+                            <span class="price-old">20.00 جنيه <span class="discount-text">وفر</span></span>
+                            <span class="price-current">99.00 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238044-D.PURPLE_1_large.webp" class="card-img-top" alt="أحذية سوداء">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">شبشب نسائي من اكتف نيو - بنفسجي غامق</h5>
+                        <p class="product-brand">اكتف نيو</p>
+                        <div class="price-container">
+                            <span class="price-old">20.00 جنيه <span class="discount-text">وفر</span></span>
+                            <span class="price-current">99.00 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238050-D.PINK_1_large.webp" class="card-img-top" alt="أحذية سوداء">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">شبشب نسائي من اكتف نيو - بنفسجي غامق</h5>
+                        <p class="product-brand">اكتف نيو</p>
+                        <div class="price-container">
+                            <span class="price-old">20.00 جنيه <span class="discount-text">وفر</span></span>
+                            <span class="price-current">99.00 جنيه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Sidebar (Filter Section) -->
+    <div class="filter-sidebar">
+        <h5>متوفر</h5>
+        <div>
+            <input type="checkbox" id="in-stock"> متوفر<br>
+            <input type="checkbox" id="out-stock"> غير متوفر
+        </div>
+
+        <h5 class="mt-4">السعر</h5>
+        <input type="range" class="form-control-range" id="priceRange">
+
+        <h5 class="mt-4">نوع المنتج</h5>
+        <div>
+            <input type="checkbox"> الموضة<br>
+            <input type="checkbox"> الحياة اليومية<br>
+            <input type="checkbox"> الجري<br>
+            <input type="checkbox"> شباشب وكروكس<br>
+            <input type="checkbox"> الرحلات<br>
+            <input type="checkbox"> المشي<br>
+        </div>
+
+        <h5 class="mt-4">المقاس</h5>
+        <div>
+            <input type="checkbox"> 36<br>
+            <input type="checkbox"> 37<br>
+            <input type="checkbox"> 38<br>
+            <input type="checkbox"> 39<br>
+            <input type="checkbox"> 40<br>
+            <input type="checkbox"> 41<br>
+        </div>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

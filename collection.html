@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActivNew Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./collection.css">
+    <style>
+        /* General page styling */
+        body {
+            background-color: #f8f9fa;
+            overflow-x: hidden;
+        }
+
+        /* Navbar styling */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        /* Main container styling */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-right: 300px; /* Leave space for fixed filter sidebar */
+        }
+
+        /* Fixed filter sidebar */
+        .filter-sidebar {
+            position:absolute;
+            right: 0;
+            top: 110px;
+            width: 250px;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+            z-index: 1000;
+           
+        }
+
+        .filter-sidebar h5 {
+            margin-top: 20px;
+        }
+
+        .filter-sidebar input {
+            margin-right: 10px;
+        }
+
+        /* Product card layout */
+        .products-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .product-card {
+            max-width: 250px;
+            margin: 15px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .price-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .price-old {
+            color: #dc3545; /* Red color for discount */
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .price-current {
+            color: #004085; /* Navy color */
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .discount-text {
+            color: #dc3545;
+            font-weight: normal;
+        }
+
+        .promo-banner {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .promo-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 768px) {
+            .main-container {
+                padding-right: 0; /* Remove extra space for fixed sidebar */
+            }
+
+            .filter-sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+                border-left: none;
+                box-shadow: none;
+                margin-bottom: 20px;
+            }
+
+            .product-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Free Shipping Banner -->
+    <div style="background-color: #2b3595; color: white; height:auto; width: auto; padding: 5px 0; text-align: center; font-size: 25px;">
+        شحن مجاني بقيمة مشتريات اعلى من 1299 جنيه
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ACTIV</a>
+        <div class="ml-auto">
+            <a href="#" class="btn btn-primary">Download App</a>
+            <a href="./collection(arabic).html" class="btn btn-outline-dark">Arabic</a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Product Section -->
+        <div class="products-container">
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-20227692-BLACK_1_large.webp" class="card-img-top" alt="Purple Flip Flop">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">ACTIVNEW WOMEN'S FLIP FLOP - D.PURPLE</h5>
+                        <div class="price-container">
+                            <span class="price-old">EGP 20.00 <span class="discount-text">وفر</span></span>
+                            <span class="price-current">EGP 99.00</span>
+                        </div>
+                        <p class="product-brand">ActivNew</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238009-L.BLUE_1-1_large.webp" class="card-img-top" alt="Blue Flip Flop">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">ACTIVNEW WOMEN'S FLIP FLOP - D.PURPLE</h5>
+                        <p class="product-brand">ActivNew</p>
+                        <div class="price-container">
+                            <span class="price-old">EGP 20.00 <span class="discount-text">وفر</span></span>
+                            <span class="price-current">EGP 99.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238044-D.PURPLE_1_large.webp" class="card-img-top" alt="Black Shoes">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">ACTIVNEW WOMEN'S FLIP FLOP - D.PURPLE</h5>
+                        <p class="product-brand">ActivNew</p>
+                        <div class="price-container">
+                            <span class="price-old">EGP 20.00 <span class="discount-text">وفر</span></span>
+                            <span class="price-current">EGP 99.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="card">
+                    <img src="./image/FOO-ACTIVN-PORT20238050-D.PINK_1_large.webp" class="card-img-top" alt="Black Shoes">
+                    <div class="card-body text-center">
+                        <h5 class="product-title">ACTIVNEW WOMEN'S FLIP FLOP - D.PURPLE</h5>
+                        <p class="product-brand">ActivNew</p>
+                        <div class="price-container">
+                            <span class="price-old">EGP 20.00 <span class="discount-text">وفر</span></span>
+                            <span class="price-current">EGP 99.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Sidebar (Filter Section) -->
+    <div class="filter-sidebar">
+        <h5>Available</h5>
+        <div>
+            <input type="checkbox" id="in-stock"> In stock<br>
+            <input type="checkbox" id="out-stock"> Out of stock
+        </div>
+
+        <h5 class="mt-4">Price</h5>
+        <input type="range" class="form-control-range" id="priceRange">
+
+        <h5 class="mt-4">Product Type</h5>
+        <div>
+            <input type="checkbox"> Fashion<br>
+            <input type="checkbox"> Lifestyle<br>
+            <input type="checkbox"> Running<br>
+            <input type="checkbox"> Slippers, Flip Flops & Clogs<br>
+            <input type="checkbox"> Trekking<br>
+            <input type="checkbox"> Walking<br>
+        </div>
+
+        <h5 class="mt-4">Size</h5>
+        <div>
+            <input type="checkbox"> 36<br>
+            <input type="checkbox"> 37<br>
+            <input type="checkbox"> 38<br>
+            <input type="checkbox"> 39<br>
+            <input type="checkbox"> 40<br>
+            <input type="checkbox"> 41<br>
+        </div>
+
+        
+    </div>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
